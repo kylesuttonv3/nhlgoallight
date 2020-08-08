@@ -133,9 +133,9 @@ def get_options():
     parser = OptionParser(usage='%s --option] ' % program, description='NHL Goal lamp/horn',
                           version='%s version 0.1' % program)
     parser.add_option('-t', '--team', dest='team', metavar='<team>', default=None,
-                      help='Team name including city, ex. San Jose Sharks')
-    parser.add_option('-i', '--teamid', dest='team_id', metavar='<team_id>', default=28,
-                      help='Team id from nhl.com api, ex. 28')
+                      help='Team name including city, ex. Vegas Golden Knights')
+    parser.add_option('-i', '--teamid', dest='team_id', metavar='<team_id>', default=54,
+                      help='Team id from nhl.com api, ex. 54')
     parser.add_option('--nolight', '--nolamp', dest='no_light', metavar='<no_light>', default=None,
                       help='Do not enable goal light')
     parser.add_option('--nohorn', dest='no_horn', metavar='<no_horn>', default=None,
