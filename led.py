@@ -81,7 +81,7 @@ def theaterChaseRainbow(strip, wait_ms=50):
 def run_goal_light():
     strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS, LED_CHANNEL)
     strip.begin()
-    theaterChase(strip,Color(153, 0, 153),50,500)
+    theaterChase(strip,Color(15, 15, 10),50,500)
 
 
 def clear_goal_light():
@@ -94,6 +94,6 @@ def clear_goal_light():
 if __name__ == '__main__':
     strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS, LED_CHANNEL)
     strip.begin()
-    colorWipe(strip, Color(153, 0, 153),10)
+    colorWipe(strip, Color(15, 15, 10),10)
     time.sleep(1)
     colorWipe(strip, Color(0,0,0), 10)
